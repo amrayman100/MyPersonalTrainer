@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="30dp"
+            android:text="Name"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/name"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/serving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Serving Description"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:textColor="#757472"
+            android:layout_gravity="center"
+            />
+
+
+
+
+
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/macro"
+            >
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <TextView
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Number of Servings"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:textColor="#757472"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                />
+
+
+            <EditText
+                android:text="1"
+                android:id="@+id/amount"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/Eat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:text="Eat Me!"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
